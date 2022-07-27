@@ -16,12 +16,12 @@ while True:
     mask = cv2.inRange(hsv,l_g,u_g)
     res = cv2.bitwise_and(frame,frame,mask=mask)
     fsub = frame - res
-    #green_screen = np.where(fsub==0,image,fsub)
+    green_screen = np.where(fsub==0,image,fsub)
     #cv2.imshow('Frame',frame)
     #cv2.imshow('Mask',mask)
     #cv2.imshow('Res',res)
-    cv2.imshow('fsub',fsub)
-    #cv2.imshow('Green Screen',green_screen)
+    #cv2.imshow('fsub',fsub)
+    cv2.imshow('Green Screen',green_screen)
     k = cv2.waitKey(1)
     if k == ord('q'):
         break
