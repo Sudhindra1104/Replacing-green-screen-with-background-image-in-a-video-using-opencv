@@ -55,3 +55,5 @@ We use `np.where()`. This basically says wherever there are black areas in the f
 https://user-images.githubusercontent.com/100610040/181200936-dd77b39e-6b21-425b-bb76-3321f075fbca.mp4
 
 So we have successfully interpolated our preferred background image replacing our green screen in the video!
+
+You can also try the same with any green screen video and image file and view similar results.
